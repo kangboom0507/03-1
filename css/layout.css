@@ -11,7 +11,7 @@
  .header-area .gnb-list { display: flex; } 
 .header-area .gnb-item { display: block; padding: 0 10px; font-size: 17px; line-height: 32px; letter-spacing: -0.36px; } 
 .header-area .link-gnb { display: block; line-height: 64px; } 
-.header-area .sub-list { position: absolute; display: none; } 
+.header-area .gnb-wrap .sub-list { position: absolute; display: none; } 
 
 .header-area .util-wrap { margin-left: auto; display: flex; align-items: center; } 
 
@@ -47,7 +47,7 @@
 
 
 
-/* */
+ 
 @media screen and (max-width: 1408px) {/*작은 데스크탑에서 사용될 스타일을 여기에 작성합니다. */}
 
 
@@ -79,6 +79,9 @@
     right: 22px;
     height: 1px;
     background-color: #d0d0d0;}
+.sub-menu .menu-list .gnb-item .sub-list{
+    font-size: 15px; position: relative; display: none;
+}    
 .sub-menu .menu-list .btn-down::after {
     content:'';
     display: inline-block;

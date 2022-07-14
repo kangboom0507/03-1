@@ -70,18 +70,14 @@ $(function(){
     $('.sub-menu').toggleClass('on');
   })
 
-  // $('.button-menu.active').click(function(e){
-  //   e.preventDefault();
-
-  //   $('.sub-menu').removeClass('on');
-  // })
 
 
-  $('.gnb-item').click(function(e){
+
+  $('.btn-down').click(function(e){
     e.preventDefault();
 
-    $('.btn-down').siblings('.sub-list').stop().slideToggle();
-    $(this).toggleClass('up')
+    $(this).siblings('.sub-list').stop().slideToggle();
+    $(this).toggleClass('on')
 })
 
 
@@ -97,7 +93,6 @@ $(function(){
     $('.site-wrap').toggleClass('on');
     $('.site-wrap').toggleClass('color');
  
-    
 })
 
 
